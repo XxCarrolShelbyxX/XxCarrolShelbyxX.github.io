@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background music -->
+    <audio autoplay loop>
+        <source src="https://cdn.pixabay.com/audio/2022/03/09/audio_4cf84600d4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <div class="bows">
+            <img src="https://w7.pngwing.com/pngs/957/903/png-transparent-smiling-orange-cat-illustration-cat-cartoon-cuteness-cute-cat-comics-face-animals-thumbnail.png" alt="Pink Bow" class="bow">
+            <img src="https://w7.pngwing.com/pngs/957/903/png-transparent-smiling-orange-cat-illustration-cat-cartoon-cuteness-cute-cat-comics-face-animals-thumbnail.png" alt="Pink Bow" class="bow">
+            <img src="https://w7.pngwing.com/pngs/957/903/png-transparent-smiling-orange-cat-illustration-cat-cartoon-cuteness-cute-cat-comics-face-animals-thumbnail.png" alt="Pink Bow" class="bow">
+        </div>
+        <h1>WOOOOOOOOOOOHOOOOOOOOOOO :O</h1>
+        <p>Button click kro cutie :3</p>
+        <div class="game">
+            <button onclick="startGame()">Start</button>
+        </div>
+
+        <!-- Game 1: Matching Game -->
+        <div id="matching-game" class="hidden">
+            <h2>Match the Pairs!</h2>
+            <p>Click two cards to match them!</p>
+            <div class="cards">
+                <div class="card" onclick="flipCard(this)" data-match="1">🐱</div>
+                <div class="card" onclick="flipCard(this)" data-match="2">🐶</div>
+                <div class="card" onclick="flipCard(this)" data-match="1">🐱</div>
+                <div class="card" onclick="flipCard(this)" data-match="2">🐶</div>
+            </div>
+        </div>
+
+        <!-- Game 2: Counting Stars -->
+        <div id="counting-game" class="hidden">
+            <h2>Count the Stars!</h2>
+            <p>How many stars do you see?</p>
+            <div class="stars">
+                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                <span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+            <input type="number" id="star-count" placeholder="Enter number" />
+            <button onclick="checkStars()">Submit</button>
+        </div>
+
+        <!-- Game 3: Balloon Popping Game -->
+        <div id="balloon-game" class="hidden">
+            <h2>Pop the Balloons!</h2>
+            <p>Pop all the balloons :3333</p>
+            <div class="balloons">
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+            </div>
+        </div>
+
+        <!-- Birthday Message -->
+        <div id="birthday-message" class="hidden">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHh0vMiW1W7bBKpLKoR6miD_xQzr52iFGaqw&s" alt="Birthday Cake" class="birthday-cake">
+            <h1>Happy Birthday ANSHUUUUUUUU :3333</h1>
+            <p>You are my sunshine My only sunshine :333333333</p>
+        </div>
+        <div class="bows">
+            <img src="https://w7.pngwing.com/pngs/957/903/png-transparent-smiling-orange-cat-illustration-cat-cartoon-cuteness-cute-cat-comics-face-animals-thumbnail.png" alt="Pink Bow" class="bow">
+            <img src="https://w7.pngwing.com/pngs/957/903/png-transparent-smiling-orange-cat-illustration-cat-cartoon-cuteness-cute-cat-comics-face-animals-thumbnail.png" alt="Pink Bow" class="bow">
+            <img src="https://w7.pngwing.com/pngs/957/903/png-transparent-smiling-orange-cat-illustration-cat-cartoon-cuteness-cute-cat-comics-face-animals-thumbnail.png" alt="Pink Bow" class="bow">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
