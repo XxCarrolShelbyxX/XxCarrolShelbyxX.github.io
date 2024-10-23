@@ -59,3 +59,8 @@ function goToNextGame(currentGame, nextGame) {
     document.getElementById(currentGame).classList.add('hidden');
     document.getElementById(nextGame).classList.remove('hidden');
 }
+
+function playMusic() {
+    const audio = document.getElementById('bg-music');
+    audio.play();
+}
